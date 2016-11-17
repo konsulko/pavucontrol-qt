@@ -3,7 +3,7 @@ project(pavucontrol-qt)
 
 option(UPDATE_TRANSLATIONS "Update source translation translations/*.ts files" OFF)
 
-set(LXQTBT_MINIMUM_VERSION "0.1.0")
+#set(LXQTBT_MINIMUM_VERSION "0.1.0")
 list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake")
 
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
@@ -17,10 +17,10 @@ find_package(Qt5Widgets REQUIRED QUIET)
 find_package(Qt5LinguistTools REQUIRED QUIET)
 find_package(Qt5DBus REQUIRED)
 
-find_package(lxqt-build-tools ${LXQTBT_MINIMUM_VERSION} REQUIRED)
+#find_package(lxqt-build-tools ${LXQTBT_MINIMUM_VERSION} REQUIRED)
 
-include(LXQtCompilerSettings NO_POLICY_SCOPE)
-include(LXQtTranslate)
+#include(LXQtCompilerSettings NO_POLICY_SCOPE)
+#include(LXQtTranslate)
 
 find_package(PkgConfig REQUIRED QUIET)
 pkg_check_modules(
