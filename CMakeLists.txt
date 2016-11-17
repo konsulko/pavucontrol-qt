@@ -14,7 +14,7 @@ set(CMAKE_AUTOUIC ON)
 include(GNUInstallDirs)
 
 find_package(Qt5Widgets REQUIRED QUIET)
-find_package(Qt5LinguistTools REQUIRED QUIET)
+#find_package(Qt5LinguistTools REQUIRED QUIET)
 find_package(Qt5DBus REQUIRED)
 
 #find_package(lxqt-build-tools ${LXQTBT_MINIMUM_VERSION} REQUIRED)
